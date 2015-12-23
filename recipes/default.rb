@@ -1,0 +1,8 @@
+include_recipe 'php7::ppa-ondrej'
+include_recipe 'php7::php-cli'
+include_recipe 'php7::php-fpm'
+include_recipe 'php7::php-apcu'
+include_recipe 'php7::php-curl'
+include_recipe 'php7::php-intl'
+include_recipe 'php7::php-mysql'
+include_recipe 'php7::php-redis'

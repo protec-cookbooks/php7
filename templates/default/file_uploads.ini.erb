@@ -1,0 +1,28 @@
+; Automatically created with chef for <%= node['fqdn'] %>
+; DO NOT EDIT
+
+;;;;;;;;;;;;;;;;
+; File Uploads ;
+;;;;;;;;;;;;;;;;
+
+; Maximum size of POST data that PHP will accept.
+; Its value may be 0 to disable the limit. It is ignored if POST data reading
+; is disabled through enable_post_data_reading.
+; http://php.net/post-max-size
+post_max_size = <%= node['php7']['post_max_size'] %>
+
+; Whether to allow HTTP file uploads.
+; http://php.net/file-uploads
+file_uploads = <%= node['php7']['file_uploads'] %>
+
+; Temporary directory for HTTP uploaded files (will use system default if not
+; specified).
+; http://php.net/upload-tmp-dir
+upload_tmp_dir = <%= node['php7']['upload_tmp_dir'] %>
+
+; Maximum allowed size for uploaded files.
+; http://php.net/upload-max-filesize
+upload_max_filesize = <%= node['php7']['upload_max_filesize'] %>
+
+; Maximum number of files that can be uploaded via a single request
+max_file_uploads = <%= node['php7']['max_file_uploads'] %>
