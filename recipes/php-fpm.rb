@@ -1,6 +1,6 @@
 include_recipe 'php7::ppa-ondrej'
 
-package "php-fpm" do
+package "php7.0-fpm" do
     action :upgrade
 end
 
