@@ -9,3 +9,5 @@ include_recipe 'php7::php-mysql'
 include_recipe 'php7::php-redis'
 include_recipe 'php7::php-soap'
 include_recipe 'php7::php-xml'
+include_recipe 'php7::php-zip'
+

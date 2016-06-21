@@ -4,7 +4,7 @@ maintainer_email "dev@protecinnovations.co.uk"
 license          "All rights reserved"
 description      "Installs/Configures php7"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.1.0"
+version          "0.1.1"
 
 %w{ ubuntu }.each do |os|
     supports os
@@ -22,3 +22,4 @@ recipe 'php7::php-mysql', 'Installs php-mysql'
 recipe 'php7::php-pear', 'Installs php-pear'
 recipe 'php7::php-redis', 'Installs php-redis'
 recipe 'php7::php-xml', 'Installs php-xml'
+recipe 'php7::php-zip', 'Installs php-zip'
