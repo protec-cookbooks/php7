@@ -4,7 +4,7 @@ maintainer_email "dev@protecinnovations.co.uk"
 license          "All rights reserved"
 description      "Installs/Configures php7"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.4.0"
+version          "0.4.1"
 
 %w{ ubuntu }.each do |os|
     supports os
@@ -16,6 +16,7 @@ recipe 'php7::php-apcu', 'Installs php-apcu and php-apcu-bc'
 recipe 'php7::php-cli', 'Installs php-cli'
 recipe 'php7::php-curl', 'Installs php-curl'
 recipe 'php7::php-fpm', 'Installs php-fpm'
+recipe 'php7::php-imagick', 'Installs php-imagick'
 recipe 'php7::php-intl', 'Installs php-intl'
 recipe 'php7::php-mbstring', 'Installs php-mbstring'
 recipe 'php7::php-memcached', 'Installs php-memcached'
